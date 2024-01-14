@@ -1,1 +1,1 @@
-# TechBechSchool
+# TechBeatsSchool
