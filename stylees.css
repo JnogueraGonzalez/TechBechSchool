@@ -1,3 +1,14 @@
+.encabezado {
+  display: flex;
+width: 414px;
+height: 64px;
+padding: 14px 17px 10px 9px;
+align-items: center;
+gap: 12px;
+flex-shrink: 0;
+border-bottom: 3px solid #00A7C5;
+}
+
 .piano-container {
   display: flex;
   align-items: center;
