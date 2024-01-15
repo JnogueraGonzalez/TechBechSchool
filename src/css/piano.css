@@ -10,6 +10,7 @@
   }
   
   .piano-container {
+    background-image:url("../assets/images/Piano_photo.png");
     display: flex;
     width: 90vw;
     height: 30vh;
