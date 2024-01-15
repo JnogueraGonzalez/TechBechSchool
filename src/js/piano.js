@@ -1,14 +1,14 @@
 
 //cambio de color
 
-const keyOne = document.getElementById("one");
+//const keyOne = document.getElementById("key");
+//const keyTwo = document.getElementById("two");
 
 
-document.getElementById("one").addEventListener('click',
-function (){
-keyOne.style.color = "blue";
+//document.getElementById("key").addEventListener('click',
+////keyOne.style.color = "blue";
   
-})
+//})
 
 
 //Comenzar hacer el bucle para que suenen las teclas para vaya cambiando el mp3////
