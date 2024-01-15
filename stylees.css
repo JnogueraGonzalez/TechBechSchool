@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('/TechBechSchool/assets/images/Background\ image\ small.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* background-position: center center; */
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-position: center center; */
+    
+    }
+    
+    nav {
+      background: linear-gradient(to top, #000000, #FFFFFF);  
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    img {
+        width: 100px;  
+    }
+    
+    button {
+      background-color: #CEA8FF;
+      right: 20px; /* Ajusta este valor según tus necesidades */
+      top: 50%;
+      padding: 1em 2em; /* Ajusta el tamaño de los botones con unidades relativas */  color: black;
+      border: none;
+      border-radius: 1em; /* Ajusta la cantidad para hacer los botones más redondeados */
+      border: 0.2em solid #2980b9; /* Ajusta el grosor del borde con unidades relativas */
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #DCB1FF;
+    }
+    
+    .buttons-container button:nth-child(2) {
+        right: 70px;
+      }
+      
+      .buttons-container button:nth-child(3) {
+        right: 140px;
+      }
+    
+      .pie-de-pagina {
+        
+        background: linear-gradient(to top, #000000, #FFFFFF);  
+        padding: 20px;
+        background: linear-gradient(to right, #ef9923, #FFFFFF);
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+      }
+    
+      .contenido-principal {
+    
+        width: 50%; /* Puedes ajustar el ancho según tus necesidades */
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; /* Opcional: centra el contenido dentro de .contenido-principal */
+        position: relative;
+        color: #FFFFFF;
+      }
+      .imagenes-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      
+      .imagenes-container img {
+        width: 48%; /* Ajusta según sea necesario para formar un cuadrado */
+        max-width: 200px; /* Establece el ancho máximo de las imágenes */
+        height: auto;
+        margin-bottom: 2%; /* Agrega espacio entre las imágenes */
+      }
+        
+      
+      .pie-de-pagina {
+        background: linear-gradient(to top, #000000, #FFFFFF);  
+    
+        padding: 20px;
+        background: linear-gradient(to right, #070400, #FFFFFF);
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+      }
+     
+    /* ... tu código anterior ... */
+     
+      .redes-sociales a {
+        margin: 0 10px;
+        display: inline-block;
+      }
+      
+      .redes-sociales img {
+        width: 30px;
+      }
+    .texto-enlaces {
+        display: flex;
+        align-items: center;
+      }
+      
+      .texto-enlaces p {
+        margin: 5px 10px 5px 0; /* Ajusta el margen según tus preferencias */
+      }
+    
+      .descripcion-imagen {
+        flex: 1;
+        max-width: 80v; /* Ajusta según sea necesario */
+        text-align: center;
+        margin: 10px;  }
+      
+      .descripcion-imagen img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .descripcion {
+        display: none;
+      }
+    
+      
+      /* Media queries para ajustar el diseño en pantallas más pequeñas */
+      @media (max-width: 768px) {
+        .galeria {
+          flex-direction: column;
+        }
+      
+        .descripcion-imagen {
+          max-width: 100%;
+        }
+      }  
+    /* 
+      /* ... tu código anterior ... */
+     /* button style="width:100px;margin: 10px 0px;padding: 10px;background:#872929;color:#fff;border:solid 1px #000;" onclick="GeneraForm()">Generar Formulario</button> */
+    
+    /*.imagen-fondo {
+        background: url('bolas-cristal-fondo-morado.jpg') center/cover no-repeat; /* Cambia 'tu_imagen_fondo.jpg' por la ruta de tu imagen de fondo */
+        /* width: 100%;
+        height: 100%;
+        position: relative; */
+      /* }/* */
+      
+      /* .imagen-fondo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+      } */
+    
+    
+      /* ... Tu código anterior ... */
+    
+      /* .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+       */
+    
+    /* 
+    .about-us {
+      position: relative;
+      text-align: center;
+    }
+    
+    .about-us img {
+      width: 100%; /* Ajusta el ancho según tus necesidades */
+      /* height: auto;
+    }
+    
+    .descripcion-imagen {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+      cursor: pointer;
+      position: relative;
+    }
+    
+    .descripcion {
+      display: none;
+      position: absolute;
+      top: 100%; /* Posiciona la descripción debajo de la imagen */
+      /* left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+      /* padding: 10px;
+      border-radius: 5px;
+      width: 200px; /* Ajusta el ancho según tus necesidades */
+    /* } */ 
+    
+    /* .descripcion img {
+      max-width: 100%;
+      height: auto;
+    }  */ 
+    
+    /* ... Tu código posterior ... */
+    
+      /* ... tu código posterior ... */
+    
+      
+    /* ... tu código anterior ... */
+    /* 
+    .texto-enlaces {
+        display: flex;
+        align-items: center;
+      }
+      
+      .texto-enlaces p {
+        margin: 5px 10px 5px 0; /* Ajusta el margen según tus preferencias  */
+      /*}  */
+       
+      /* ... tu código posterior ... */
+    
+      .imagen-con-texto {
+        position: relative;
+        width: 100%; /* Ocupa el 100% del ancho del contenedor padre */
+        max-width: 200px; /* Ancho máximo del contenedor */
+        margin-bottom: 4vw; /* Espaciado inferior en unidades de viewport */
+        text-align: center;
+      
+        /* Fondo morado casi transparente */
+        background-color: rgba(128, 0, 128, 0.2);
+        padding: 4vw; /* Espaciado interno en unidades de viewport */
+      }
+      
+      .imagen-con-texto img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .imagen-con-texto p {
+        margin: 0;
+        color: #fff; /* Color del texto blanco */
+      }
