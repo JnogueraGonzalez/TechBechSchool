@@ -1,4 +1,4 @@
-// Cambio de color Andrea
+//Cambio de color Andrea
 
 document.addEventListener('DOMContentLoaded', function() {
   // Para obtener todas las teclas blancas y negras
