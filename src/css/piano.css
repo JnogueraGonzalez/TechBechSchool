@@ -12,8 +12,8 @@
   .piano-container {
     display: flex;
     width: 90vw;
-    height: 60vh;
-    border: 1rem solid #e4d746;
+    height: 30vh;
+    border: 0.5rem solid #e4d746;
     border-radius: 1rem;
     margin: 0 auto;
     position: relative;
@@ -29,21 +29,21 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    cursor: pointer;
+    cursor:pointer;
   }
   
   .white-key {
-    border: 3px solid #010425;
+    border: 3px solid #a2a4b1;
     background-color: #fff;
     transition: 0.2s all;
   }
   
-  /*.white-active,
+  .white-active,
   .white-key:hover {
-    background-color: rgba(81, 182, 178);
+    background-color: rgb(221, 178, 111);
     border-bottom: none;
     transform: rotate3d(1, 0, 0, 20deg);
-  }*/
+  }
   
   .black-key {
     background: rgb(36, 32, 30);
@@ -51,7 +51,7 @@
     background: linear-gradient(
       180deg,
       rgba(36, 32, 30, 1) 26%,
-      rgba(79, 82, 71, 1) 86%
+      rgb(80, 78, 86) 86%
     );
     height: 7rem;
     width: 1.5rem;
