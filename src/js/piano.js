@@ -1,27 +1,13 @@
 
-//seleccionamos un atributo
-const audioEtiqueta = document.querySelector("audio");
-
-///elemento.addEventListener("tipo-de-evento" , funcion-a-ejecutar)
-
-document.addEventListener("mouseover", () => {
-  audioEtiqueta.setAttribute("src", '/assets/audio/white-keys/sounds_white-keys_1.mp3');
-  audioEtiqueta.play();
-  console.log(`Reproduciendo: ${audioEtiqueta.src}`)
-
-})
-  
-const keyOne = document.getElementById("one");
-
 //cambio de color
 
+const keyOne = document.getElementById("one");
 
-document.getElementById("one").addEventListener('mouseover', 
+
+document.getElementById("one").addEventListener('click',
 function (){
-  keyOne.style.color = "blue";
-  keyOne.setAttribute("src",audio);
-  keyOne.play("src", "assets/audio/white-keys/sounds_white-keys_1.mp3");
-
+keyOne.style.color = "blue";
+  
 })
 
 
@@ -54,7 +40,7 @@ const blackKeys = document.querySelectorAll(".black-key");
   });
     
   whiteKeys.forEach((white, index) => {
-    white.addEventListener('mouseover', () => {
+    white.addEventListener('click', () => {
       let sound = new Audio(`/assets/audio/white-keys/sounds_white-keys_${index}.mp3`);
       playSound(sound);
     });
