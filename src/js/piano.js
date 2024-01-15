@@ -1,15 +1,22 @@
+//cambio de color Andrea
 
-//cambio de color
+document.addEventListener('DOMContentLoaded', function() {
+  // Obtén todas las teclas blancas y negras
+  var keys = document.querySelectorAll('.key');
 
-const keyOne = document.getElementById("one");
+  // Asigna un evento de clic a cada tecla
+  keys.forEach(function(key) {
+      key.addEventListener('click', function() {
+          // Resetea el color de fondo de todas las teclas
+          keys.forEach(function(k) {
+              k.style.backgroundColor = '';
+          });
 
-
-document.getElementById("one").addEventListener('click',
-function (){
-keyOne.style.color = "blue";
-  
-})
-
+          // Cambia el color de fondo de la tecla clicada
+          key.style.backgroundColor = 'yellow';
+      });
+  });
+});
 
 //Comenzar hacer el bucle para que suenen las teclas para vaya cambiando el mp3////
 
