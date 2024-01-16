@@ -10,7 +10,7 @@
   }
   
   .piano-container {
-    background-image: url("../../assets/images/Piano_photo.png");
+    background-image: url("../../");
     display: flex;
     width: 80vw;
     height: 30vh;
@@ -31,17 +31,23 @@
     align-items: flex-end;
     justify-content: center;
     cursor:pointer;
+    
   }
   
   .white-key {
     border: 3px solid #a2a4b1;
     background-color: #ffffff;
     transition: 0.2s all;
+    position:relative;
   }
   
   .white-active,
   .white-key:hover {
-    background-color: rgb(29, 112, 84);
+    background-color: linear-gradient(
+      180deg,
+      rgb(126, 86, 234) 26%,
+      rgb(80, 78, 86) 86%
+    );
     border-bottom: none;
     transform: rotate3d(1, 0, 0, 20deg);
   }
@@ -65,7 +71,7 @@
 /* 41px 82px*/
 
   .black-1 {
-    left: 46px;
+    left: 39px;
   }
   
   .black-2 {
