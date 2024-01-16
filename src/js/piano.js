@@ -45,4 +45,7 @@ const blackKeys = document.querySelectorAll(".black-key");
       playSound(sound);
     });
   });
+
+
+  //función para cambiar el color de las teclas
   

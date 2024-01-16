@@ -1,146 +1,136 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    background: #250360;
-    height: 100vh;
-  }
-  
-  .piano-container {
-    background-image: url("../../");
-    display: flex;
-    width: 80vw;
-    height: 30vh;
-    border: 0.5rem solid #e4d746;
-    border-radius: 1rem;
-    margin: 0 auto;
-    position: relative;
-    padding: 1rem;
-    margin-top: 3rem;
-  }
-  
-  .key {
-    width: 2.5rem;
-    height: 10rem;
-    border-radius: 0 0 4px 4px;
-    box-shadow: 2px 2px 10px 0px #ccc;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    cursor:pointer;
-    
-  }
-  
-  .white-key {
-    border: 3px solid #a2a4b1;
-    background-color: #ffffff;
-    transition: 0.2s all;
-    position:relative;
-  }
-  
-  .white-active,
-  .white-key:hover {
-    background-color: linear-gradient(
-      180deg,
-      rgb(126, 86, 234) 26%,
-      rgb(80, 78, 86) 86%
-    );
-    border-bottom: none;
-    transform: rotate3d(1, 0, 0, 20deg);
-  }
-  
-  .black-key {
-    background: rgb(36, 32, 30);
-    z-index: 1;
-    background: linear-gradient(
-      180deg,
-      rgba(36, 32, 30, 1) 26%,
-      rgb(80, 78, 86) 86%
-    );
-    height: 7rem;
-    width: 1.5rem;
-    position: absolute;
-    top: 20px;
-    transition: 0.2s all;
-  }
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-/* 41px 82px*/
+html {
+  background: #9568e4;
+  height: 100vh;
+}
 
-  .black-1 {
-    left: 39px;
-  }
-  
-  .black-2 {
-    left: 87px;
-  }
-  
-  .black-3 {
-    left: 128px;
-  }
-  
-  .black-4 {
-    left: 210px;
-  }
-  .black-5 {
-    left: 251px;
-  }
-  
-  .black-6 {
-    left: 333px;
-  }
-  .black-7 {
-    left: 374px;
-  }
-  
-  .black-8 {
-    left: 415px;
-  }
-  
-  .black-9 {
-    left: 497px;
-  }
-  
-  .black-10 {
-    left: 538px;
-  }
-  .black-11 {
-    left: 620px;
-  }
-  
-  .black-12 {
-    left: 662px;
-  }
-  
-  .black-13 {
-    left: 703px;
-  }
-  
-  .black-14 {
-    left: 785px;
-  }
-  
-  .black-15 {
-    left: 825px;
-  }
-  
-  .black-key:hover {
-    background: linear-gradient(
-      160deg,
-      rgb(54, 2, 112) 26%,
-      rgb(43, 3, 73) 86%
-    );
-  
-    transform: translateY(20px);
-  }
-  
-  .black-key:active {
-    background: linear-gradient(
-      120deg,
-      rgb(0, 0, 0) 26%,
-      rgb(119, 118, 118) 86%
-    );
-  }
+.piano-container {
+  display: flex;
+  width: 90vw;
+  height: 57vh;
+  border: 10px solid #000634;
+  border-radius: 1rem;
+  margin: 0 auto;
+  position: relative;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.key {
+  width: 2.5rem;
+  height: 10rem;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 2px 2px 10px 0px #ccc;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.white-key {
+  border: 3px solid #636363;
+  background-color: #fff;
+  transition: 0.2s all;
+}
+
+.white-active,
+.white-key:hover {
+  background-color: rgb(207, 147, 224);
+  border-bottom: none;
+  transform: rotate3d(1, 0, 0, 20deg);
+}
+
+.black-key {
+  background: rgb(36, 32, 30);
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(36, 32, 30, 1) 26%,
+    rgba(79, 82, 71, 1) 86%
+  );
+  height: 7rem;
+  width: 1.5rem;
+  position: absolute;
+  top: 20px;
+  transition: 0.2s all;
+}
+
+.black-1 {
+  left: 46px;
+}
+
+.black-2 {
+  left: 87px;
+}
+
+.black-3 {
+  left: 172px;
+}
+
+.black-4 {
+  left: 213px;
+}
+.black-5 {
+  left: 254px;
+}
+
+.black-6 {
+  left: 344px;
+}
+.black-7 {
+  left: 384px;
+}
+
+.black-8 {
+  left: 470px;
+}
+
+.black-9 {
+  left: 511px;
+}
+
+.black-10 {
+  left: 552px;
+}
+.black-11 {
+  left: 640px;
+}
+
+.black-12 {
+  left: 682px;
+}
+
+.black-13 {
+  left: 764px;
+}
+
+.black-14 {
+  left: 805px;
+}
+
+.black-15 {
+  left: 842px;
+}
+
+.black-key:hover {
+  background: linear-gradient(
+    180deg,
+    rgb(61, 59, 58) 26%,
+    rgb(164, 91, 213) 86%
+  );
+
+  transform: translateY(20px);
+}
+
+.black-key:active {
+  background: linear-gradient(
+    180deg,
+    rgba(36, 32, 30, 1) 26%,
+    rgb(164, 164, 164) 86%
+  );
+}
