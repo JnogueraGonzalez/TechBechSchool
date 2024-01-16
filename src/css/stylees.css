@@ -1,8 +1,10 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100vw;
+  height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url('/TechBechSchool/assets/images/Background\ image\ small.png');
+  background-image: url('/assets/images/Background image small.png');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -12,52 +14,58 @@ body {
   flex-direction: column;
   justify-content: space-between;
   /* background-position: center center; */
-  
+  /* background-attachment: scroll; O simplemente omite esta línea ya que "scroll" es el valor predeterminado */
+  /* border-bottom: 2px solid #00CED1;
+  bottom: 0; Coloca la línea en la parte inferior del body */
+ 
   }
   
   nav {
-    background: linear-gradient(to top, #000000, #FFFFFF);  
+    /* background:#000000;   */
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid #00CED1;
   }
   
   img {
-      width: 100px;  
+      width: 12vw;  
   }
   
   button {
     background-color: #CEA8FF;
+    font-weight: bold;
+    font-size: 1em; 
     right: 20px; /* Ajusta este valor según tus necesidades */
     top: 50%;
     padding: 1em 2em; /* Ajusta el tamaño de los botones con unidades relativas */  color: black;
     border: none;
-    border-radius: 1em; /* Ajusta la cantidad para hacer los botones más redondeados */
-    border: 0.2em solid #2980b9; /* Ajusta el grosor del borde con unidades relativas */
-    cursor: pointer;
+    border-radius: 1em; /* Ajusta la cantidad para hacer los botones más redondeados
+    border: 0.2em solid #2980b9; Ajusta el grosor del borde con unidades relativas */
+    cursor:pointer;
   }
   
   button:hover {
     background-color: #DCB1FF;
   }
   
-  .buttons-container button:nth-child(2) {
+  
+  /* .buttons-container button:nth-child(2) {
       right: 70px;
     }
     
     .buttons-container button:nth-child(3) {
       right: 140px;
-    }
-  
-    .pie-de-pagina {
-      
-      background: linear-gradient(to top, #000000, #FFFFFF);  
+    } */
+     .pie-de-pagina {
+        
       padding: 20px;
-      background: linear-gradient(to right, #ef9923, #FFFFFF);
       text-align: center;
       display: flex;
       justify-content: space-between;
+      border-top: 2px solid #00CED1;
+
     }
   
     .contenido-principal {
@@ -71,27 +79,31 @@ body {
     }
     .imagenes-container {
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      justify-content: space-around; /* Puedes ajustar esto según tus preferencias */
+      flex-wrap: nowrap; /* Esto asegura que las cajas no se envuelvan a la siguiente línea */
     }
     
-    .imagenes-container img {
-      width: 48%; /* Ajusta según sea necesario para formar un cuadrado */
-      max-width: 200px; /* Establece el ancho máximo de las imágenes */
-      height: auto;
-      margin-bottom: 2%; /* Agrega espacio entre las imágenes */
-    }
-      
-    
-    .pie-de-pagina {
-      background: linear-gradient(to top, #000000, #FFFFFF);  
-  
-      padding: 20px;
-      background: linear-gradient(to right, #070400, #FFFFFF);
+    .imagen-con-texto {
+      flex: 0 0 auto; /* Evita que las cajas se hagan más pequeñas que su contenido */
+      max-width: 200px; /* Ancho máximo del contenedor */
+      margin: 10px;
       text-align: center;
-      display: flex;
-      justify-content: space-between;
+      background-color: rgba(128, 0, 128, 0.2);
+      padding: 20px;
     }
+    
+    .imagen-con-texto img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .imagen-con-texto p {
+      margin: 0;
+      color: #fff;
+    }
+    
+ 
    
   /* ... tu código anterior ... */
    
@@ -127,103 +139,7 @@ body {
       display: none;
     }
   
-    
-    /* Media queries para ajustar el diseño en pantallas más pequeñas */
-    @media (max-width: 768px) {
-      .galeria {
-        flex-direction: column;
-      }
-    
-      .descripcion-imagen {
-        max-width: 100%;
-      }
-    }  
-  /* 
-    /* ... tu código anterior ... */
-   /* button style="width:100px;margin: 10px 0px;padding: 10px;background:#872929;color:#fff;border:solid 1px #000;" onclick="GeneraForm()">Generar Formulario</button> */
-  
-  /*.imagen-fondo {
-      background: url('bolas-cristal-fondo-morado.jpg') center/cover no-repeat; /* Cambia 'tu_imagen_fondo.jpg' por la ruta de tu imagen de fondo */
-      /* width: 100%;
-      height: 100%;
-      position: relative; */
-    /* }/* */
-    
-    /* .imagen-fondo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-    } */
-  
-  
-    /* ... Tu código anterior ... */
-  
-    /* .galeria {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-    }
-     */
-  
-  /* 
-  .about-us {
-    position: relative;
-    text-align: center;
-  }
-  
-  .about-us img {
-    width: 100%; /* Ajusta el ancho según tus necesidades */
-    /* height: auto;
-  }
-  
-  .descripcion-imagen {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    cursor: pointer;
-    position: relative;
-  }
-  
-  .descripcion {
-    display: none;
-    position: absolute;
-    top: 100%; /* Posiciona la descripción debajo de la imagen */
-    /* left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
-    /* padding: 10px;
-    border-radius: 5px;
-    width: 200px; /* Ajusta el ancho según tus necesidades */
-  /* } */ 
-  
-  /* .descripcion img {
-    max-width: 100%;
-    height: auto;
-  }  */ 
-  
-  /* ... Tu código posterior ... */
-  
-    /* ... tu código posterior ... */
-  
-    
-  /* ... tu código anterior ... */
-  /* 
-  .texto-enlaces {
-      display: flex;
-      align-items: center;
-    }
-    
-    .texto-enlaces p {
-      margin: 5px 10px 5px 0; /* Ajusta el margen según tus preferencias  */
-    /*}  */
-     
-    /* ... tu código posterior ... */
-  
+
     .imagen-con-texto {
       position: relative;
       width: 100%; /* Ocupa el 100% del ancho del contenedor padre */
@@ -247,4 +163,13 @@ body {
       color: #fff; /* Color del texto blanco */
     }
     
-  
+      /* Media queries para ajustar el diseño en pantallas más pequeñas */
+      @media (max-width: 768px) {
+        .galeria {
+          flex-direction: column;
+        }
+      
+        .descripcion-imagen {
+          max-width: 100%;
+        }
+      }  
