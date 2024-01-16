@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../assets/images/BackgroundGeneral.png">
+    <link rel="stylesheet" href="../formulario/formulario.css">
+</head>
+<body-f>
+    <div class="container">
+      <p-f>Aprenda con Nosotras</p>
+        <div class="container-formulario">
+            <form id="myForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                
+                <button-formulario type="button" onclick="enviarFormulario()">Enviar</button-formulario>
+            </form>
+
+            <div id="respuesta"></div>
+        </div>
+    </div>
+
+    <script src="../formulario/formulario.js"></script>
+</body-f>
+</html>
