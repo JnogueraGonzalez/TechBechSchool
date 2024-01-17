@@ -7,12 +7,11 @@ body {
   background-image: url('/assets/images/Background image small.png');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
   display: flex;
   /* background-position: center center; */
   flex-direction: column;
   justify-content: space-between;
+  background-attachment: fixed;
   /* background-position: center center; */
   /* background-attachment: scroll; O simplemente omite esta línea ya que "scroll" es el valor predeterminado */
   /* border-bottom: 2px solid #00CED1;
@@ -31,6 +30,7 @@ body {
   
   img {
       width: 12vw;  
+      margin-right: 20px;
   }
   
   button {
@@ -58,15 +58,7 @@ body {
     .buttons-container button:nth-child(3) {
       right: 140px;
     } */
-     .pie-de-pagina {
-        
-      padding: 20px;
-      text-align: center;
-      display: flex;
-      justify-content: space-between;
-      border-top: 2px solid #00CED1;
 
-    }
   
     .contenido-principal {
   
@@ -103,10 +95,46 @@ body {
       color: #fff;
     }
     
- 
+/* Media query para hacer el nav más compacto en pantallas pequeñas */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  img {
+    width: 50%; /* Ajusta el ancho de la imagen según tus necesidades */
+    margin-bottom: 10px;
+  }
+
+  button {
+    margin-top: 10px;
+    width: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+  }
+}  
+/* Media queries para hacerlo responsive */
+@media (max-width: 768px) {
+  .imagen-con-texto {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .imagen-con-texto {
+    flex: 0 0 100%;
+  }
+}
    
   /* ... tu código anterior ... */
-   
+  .pie-de-pagina {
+        
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #00CED1;
+
+  }   
     .redes-sociales a {
       margin: 0 10px;
       display: inline-block;
@@ -114,6 +142,7 @@ body {
     
     .redes-sociales img {
       width: 30px;
+      
     }
   .texto-enlaces {
       display: flex;
@@ -122,8 +151,25 @@ body {
     
     .texto-enlaces p {
       margin: 5px 10px 5px 0; /* Ajusta el margen según tus preferencias */
+    
     }
-  
+/* Media query para ajustar el diseño en pantallas más pequeñas */
+@media (min-width: 768px) {
+  .pie-de-pagina {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .redes-sociales a,
+  .texto-enlaces {
+    margin: 0; /* Restablece el margen a cero en pantallas más grandes */
+  }
+
+  .texto-enlaces p {
+    margin-left: 10px; /* Ajusta el margen izquierdo según tus preferencias */
+  }
+}  
     .descripcion-imagen {
       flex: 1;
       max-width: 80v; /* Ajusta según sea necesario */
@@ -163,13 +209,14 @@ body {
       color: #fff; /* Color del texto blanco */
     }
     
-      /* Media queries para ajustar el diseño en pantallas más pequeñas */
-      @media (max-width: 768px) {
-        .galeria {
-          flex-direction: column;
-        }
-      
-        .descripcion-imagen {
-          max-width: 100%;
-        }
-      }  
+/* Media query para ajustar el diseño en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .imagenes-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagen-con-texto {
+    flex: 0 0 80%; /* O ajusta el porcentaje según tus necesidades */
+  }
+}
