@@ -1,28 +1,14 @@
 
-//seleccionamos un atributo
-const audioEtiqueta = document.querySelector("audio");
-
-///elemento.addEventListener("tipo-de-evento" , funcion-a-ejecutar)
-
-document.addEventListener("mouseover", () => {
-  audioEtiqueta.setAttribute("src", '/assets/audio/white-keys/sounds_white-keys_1.mp3');
-  audioEtiqueta.play();
-  console.log(`Reproduciendo: ${audioEtiqueta.src}`)
-
-})
-  
-const keyOne = document.getElementById("one");
-
 //cambio de color
 
+//const keyOne = document.getElementById("key");
+//const keyTwo = document.getElementById("two");
 
-document.getElementById("one").addEventListener('mouseover', 
-function (){
-  keyOne.style.color = "blue";
-  keyOne.setAttribute("src",audio);
-  keyOne.play("src", "assets/audio/white-keys/sounds_white-keys_1.mp3");
 
-})
+//document.getElementById("key").addEventListener('click',
+////keyOne.style.color = "blue";
+  
+//})
 
 
 //Comenzar hacer el bucle para que suenen las teclas para vaya cambiando el mp3////
@@ -54,9 +40,12 @@ const blackKeys = document.querySelectorAll(".black-key");
   });
     
   whiteKeys.forEach((white, index) => {
-    white.addEventListener('mouseover', () => {
+    white.addEventListener('click', () => {
       let sound = new Audio(`/assets/audio/white-keys/sounds_white-keys_${index}.mp3`);
       playSound(sound);
     });
   });
+
+
+  //función para cambiar el color de las teclas
   
