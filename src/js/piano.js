@@ -17,6 +17,30 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+ //Cambio de color con las teclas negras (prueba)
+ document.addEventListener('DOMContentLoaded', function() {
+  // Para obtener todas las teclas blancas y negras
+  var keys = document.querySelectorAll('.key');
+
+  // Asigna un evento de clic a cada tecla
+  keys.forEach(function(key) {
+      key.addEventListener('click', function() {
+          // Resetea el color de fondo de todas las teclas
+          keys.forEach(function(k) {
+              k.style.backgroundColor = '';
+          });
+
+          // Verifica si la tecla es blanca o negra
+          if (key.classList.contains('white-key')) {
+              // Cambia el color de fondo de la tecla blanca
+              key.style.backgroundColor = '#CEA8FF';
+          } else if (key.classList.contains('black-key')) {
+              // Cambia el color de fondo de la tecla negra
+              key.style.backgroundColor = '#6A6A6A';
+          }
+      });
+  });
+});
 
 
 //Comenzar hacer el bucle para que suenen las teclas para vaya cambiando el mp3////

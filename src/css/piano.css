@@ -10,7 +10,7 @@
   }
   
   .piano-container {
-    background-image: url("../../assets/images/Piano_photo.png");
+background-image: url("../../assets/images/Piano_photo.png");
     display: flex;
     width: 80vw;
     height: 30vh;
@@ -79,53 +79,53 @@
   .black-4 {
     left: 210px;
   }
-  .black-5 {
+  .black-6 {
     left: 251px;
   }
   
-  .black-6 {
+  .black-8 {
     left: 333px;
   }
-  .black-7 {
+  .black-9 {
     left: 374px;
   }
   
-  .black-8 {
-    left: 415px;
-  }
-  
-  .black-9 {
-    left: 497px;
-  }
-  
-  .black-10 {
-    left: 538px;
-  }
   .black-11 {
-    left: 620px;
+    left: 456px;
   }
   
   .black-12 {
-    left: 662px;
+    left: 497px;
   }
   
   .black-13 {
-    left: 703px;
+    left: 538px;
   }
-  
-  .black-14 {
-    left: 785px;
-  }
-  
   .black-15 {
+    left: 620px;
+  }
+  
+  .black-16 {
+    left: 661px;
+  }
+  
+  .black-18 {
+    left: 743px;
+  }
+  
+  .black-19 {
+    left: 784px;
+  }
+  
+  .black-20 {
     left: 825px;
   }
   
   .black-key:hover {
     background: linear-gradient(
-      160deg,
-      rgb(54, 2, 112) 26%,
-      rgb(43, 3, 73) 86%
+      180deg,
+      rgba(36, 32, 30, 1) 26%,
+      rgba(136, 173, 33) 86%
     );
   
     transform: translateY(20px);
@@ -133,8 +133,8 @@
   
   .black-key:active {
     background: linear-gradient(
-      120deg,
-      rgb(0, 0, 0) 26%,
-      rgb(119, 118, 118) 86%
+      180deg,
+      rgba(36, 32, 30, 1) 26%,
+      rgb(164, 164, 164) 86%
     );
   }
