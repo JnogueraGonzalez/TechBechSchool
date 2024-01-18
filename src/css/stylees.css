@@ -4,21 +4,26 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url('/assets/images/Background image small.png');
+  background-image: url("/TechBechSchool/assets/images/Background\ image\ big.png") ;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  /* background-position: center center; */
+  background-position: center center;
   flex-direction: column;
   justify-content: space-between;
   background-attachment: fixed;
-  /* background-position: center center; */
+  background-position: center center;
   /* background-attachment: scroll; O simplemente omite esta línea ya que "scroll" es el valor predeterminado */
   /* border-bottom: 2px solid #00CED1;
   bottom: 0; Coloca la línea en la parte inferior del body */
  
   }
-  
+@media (max-width: 768px){
+  nav {
+    flex-direction: column;
+    text-align:center;
+  }
+}
   nav {
     /* background:#000000;   */
     padding: 10px;
@@ -138,6 +143,8 @@ body {
     .redes-sociales a {
       margin: 0 10px;
       display: inline-block;
+      color: #fff; /* Cambia a blanco (#ffffff) u otro color de tu elección */
+      text-decoration: none; /* Opcional: elimina la subrayado predeterminado de los enlaces */
     }
     
     .redes-sociales img {
