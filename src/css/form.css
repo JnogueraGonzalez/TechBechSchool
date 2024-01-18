@@ -4,7 +4,7 @@
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
     background-image: url('/TechBechSchool/assets/images/Background image big.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,22 +19,23 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 2px solid #00CED1;
+        border-bottom: 3px solid #00A7C5;
       }
       img {
-        width: 12vw;  
+        width: 12vw; 
+        margin-left: 8rem; 
     }
     
     button {
       background-color: #CEA8FF;
       font-weight: bold;
       font-size: 1em; 
-      right: 20px; /* Ajusta este valor según tus necesidades */
+      right: 20px;
       top: 50%;
-      padding: 1em 2em; /* Ajusta el tamaño de los botones con unidades relativas */  color: black;
+      padding: 1em 2em;
+      color: black;
       border: none;
-      border-radius: 1em; /* Ajusta la cantidad para hacer los botones más redondeados
-      border: 0.2em solid #2980b9; Ajusta el grosor del borde con unidades relativas */
+      border-radius: 1em;
       cursor:pointer;
     }
     button:hover {
@@ -47,15 +48,21 @@
   .container {
     display: flex;
     justify-content: center;
+    color:#fff;
     align-items: center;
     min-height: 100vh;
     background: rgba(249, 248, 246, 0.23);
+    margin-top: 6.5rem;
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
+    margin-bottom: 7.5rem;
+
   
   }
 
   .container p-f {
     margin-bottom: 20px;
-    font-size: 2.2em;
+    font-size: 3rem;
     display: flex;
     flex-direction: column;
   
@@ -64,19 +71,18 @@
   .container-formulario {
     width: 80%;
     max-width: 400px;
-    background-color: rgba(128, 0, 128, 0.2);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; 
   }
   
   form {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
   
   label {
     margin-bottom: 8px;
+    font-size: 24px;
   }
   
   input {
@@ -84,6 +90,8 @@
     margin-bottom: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    width: 658px;
+    height: 35px;
   }
   
   button-formulario {
