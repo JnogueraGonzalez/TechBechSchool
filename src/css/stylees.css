@@ -1,230 +1,24 @@
-body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url("/TechBechSchool/assets/images/Background\ image\ big.png") ;
-  background-repeat: no-repeat;
-  background-size: cover;
+.piano-container {
   display: flex;
-  background-position: center center;
-  flex-direction: column;
-  justify-content: space-between;
-  background-attachment: fixed;
-
-  /* background-attachment: scroll; O simplemente omite esta línea ya que "scroll" es el valor predeterminado */
-  /* border-bottom: 2px solid #00CED1;
-  bottom: 0; Coloca la línea en la parte inferior del body */
- 
-  }
-@media (max-width: 768px){
-  nav {
-    flex-direction: column;
-    text-align:center;
-  }
-}
-  nav {
-    /* background:#000000;   */
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #00CED1;
-  }
-  
-  img {
-      width: 10vw;  
-      margin-right: 100px;
-  }
-  
-  button {
-    background-color: #CEA8FF;
-    font-weight: bold;
-    font-size: 1em; 
-    right: 20px; /* Ajusta este valor según tus necesidades */
-    top: 50%;
-    padding: 1em 2em; /* Ajusta el tamaño de los botones con unidades relativas */  color: black;
-    border: none;
-    border-radius: 1em; /* Ajusta la cantidad para hacer los botones más redondeados
-    border: 0.2em solid #2980b9; Ajusta el grosor del borde con unidades relativas */
-    cursor:pointer;
-  }
-  
-  button:hover {
-    background-color: #DCB1FF;
-  }
-  
-  
-  /* .buttons-container button:nth-child(2) {
-      right: 70px;
-    }
-    
-    .buttons-container button:nth-child(3) {
-      right: 140px;
-    } */
-
-  
-    .contenido-principal {
-  
-      width: 50%; /* Puedes ajustar el ancho según tus necesidades */
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center; /* Opcional: centra el contenido dentro de .contenido-principal */
-      position: relative;
-      color: #FFFFFF;
-    }
-    .imagenes-container {
-      display: flex;
-      justify-content: space-around; /* Puedes ajustar esto según tus preferencias */
-      flex-wrap: nowrap; /* Esto asegura que las cajas no se envuelvan a la siguiente línea */
-    }
-    
-    .imagen-con-texto {
-      flex: 0 0 auto; /* Evita que las cajas se hagan más pequeñas que su contenido */
-      max-width: 200px; /* Ancho máximo del contenedor */
-      margin: 10px;
-      text-align: center;
-      background-color: rgba(128, 0, 128, 0.2);
-      padding: 20px;
-    }
-    
-    .imagen-con-texto img {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-    }
-    
-    .imagen-con-texto p {
-      margin: 0;
-      color: #fff;
-    }
-    
-/* Media query para hacer el nav más compacto en pantallas pequeñas */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  img {
-    width: 50%; /* Ajusta el ancho de la imagen según tus necesidades */
-    margin-bottom: 10px;
-  }
-
-  button {
-    margin-top: 10px;
-    width: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
-  }
-}  
-/* Media queries para hacerlo responsive */
-@media (max-width: 768px) {
-  .imagen-con-texto {
-    flex: 0 0 calc(50% - 20px);
-  }
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
 }
 
-@media (max-width: 480px) {
-  .imagen-con-texto {
-    flex: 0 0 100%;
-  }
+.piano {
+  display: flex;
 }
-   
-  /* ... tu código anterior ... */
-  .pie-de-pagina {
-        
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    border-top: 2px solid #00CED1;
 
-  }   
-    .redes-sociales a {
-      
-      margin-right: 20px;
-       display: inline-block;
-      color: #fff; /* Cambia a blanco (#ffffff) u otro color de tu elección */
-      text-decoration: none; /* Opcional: elimina la subrayado predeterminado de los enlaces */
-    }
-    
-    .redes-sociales img {
-      width: 30px;
-      
-    }
-  .texto-enlaces {
-      display: flex;
-      align-items: center;
-    }
-    
-    .texto-enlaces p {
-      margin: 5px 10px 5px 0; /* Ajusta el margen según tus preferencias */
-    
-    }
-/* Media query para ajustar el diseño en pantallas más pequeñas */
-@media (min-width: 768px) {
-  .pie-de-pagina {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+.key {
+  width: 50px;
+  height: 200px;
+  margin: 0 5px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
 
-  .redes-sociales a,
-  .texto-enlaces {
-    margin: 0; /* Restablece el margen a cero en pantallas más grandes */
-  }
-
-  .texto-enlaces p {
-    margin-left: 10px; /* Ajusta el margen izquierdo según tus preferencias */
-  }
-}  
-    .descripcion-imagen {
-      flex: 1;
-      max-width: 80v; /* Ajusta según sea necesario */
-      text-align: center;
-      margin: 10px;  }
-    
-    .descripcion-imagen img {
-      width: 100%;
-      height: auto;
-    }
-    
-    .descripcion {
-      display: none;
-    }
-  
-
-    .imagen-con-texto {
-      position: relative;
-      width: 100%; /* Ocupa el 100% del ancho del contenedor padre */
-      max-width: 200px; /* Ancho máximo del contenedor */
-      margin-bottom: 4vw; /* Espaciado inferior en unidades de viewport */
-      text-align: center;
-    
-      /* Fondo morado casi transparente */
-      background-color: rgba(128, 0, 128, 0.2);
-      padding: 4vw; /* Espaciado interno en unidades de viewport */
-    }
-    
-    .imagen-con-texto img {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-    }
-    
-    .imagen-con-texto p {
-      margin: 0;
-      color: #fff; /* Color del texto blanco */
-    }
-    
-/* Media query para ajustar el diseño en pantallas más pequeñas */
-@media (max-width: 768px) {
-  .imagenes-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .imagen-con-texto {
-    flex: 0 0 80%; /* O ajusta el porcentaje según tus necesidades */
-  }
+.key.active {
+  background-color: lightblue;
 }
