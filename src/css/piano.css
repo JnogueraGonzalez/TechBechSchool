@@ -9,6 +9,38 @@ html {
   height: 100vh;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('/TechBechSchool/assets/images/Background\ image\ big.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /* background-position: center center; */
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-position: center center; */
+  /* background-attachment: scroll; O simplemente omite esta línea ya que "scroll" es el valor predeterminado */
+  /* border-bottom: 2px solid #00CED1;
+  bottom: 0; Coloca la línea en la parte inferior del body */
+ 
+  }
+  
+  nav {
+    /* background:#000000;   */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #00CED1;
+  }
+  
+
 .piano-container {
   display: flex;
   width: 90vw;
@@ -111,11 +143,11 @@ html {
 }
 
 .black-14 {
-  left: 805px;
+  left: 760px;
 }
 
 .black-15 {
-  left: 842px;
+  left: 797px;
 }
 
 .black-key:hover {
@@ -135,3 +167,4 @@ html {
     rgb(164, 164, 164) 86%
   );
 }
+
