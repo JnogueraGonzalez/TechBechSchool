@@ -1,0 +1,122 @@
+
+  body-f {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    background-image: url('/TechBechSchool/assets/images/Background image big.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+/*--------------NAV------*/
+    nav {   
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 3px solid #00A7C5;
+      }
+      img {
+        width: 12vw; 
+        margin-left: 8rem; 
+    }
+    
+    button {
+      background-color: #CEA8FF;
+      font-weight: bold;
+      font-size: 1em; 
+      right: 20px;
+      top: 50%;
+      padding: 1em 2em;
+      color: black;
+      border: none;
+      border-radius: 1em;
+      cursor:pointer;
+    }
+    button:hover {
+        background-color: #DCB1FF;
+      }
+
+    
+
+    /*-------------FORM--------------*/
+  .container {
+    display: flex;
+    justify-content: center;
+    color:#fff;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(249, 248, 246, 0.23);
+    margin-top: 6.5rem;
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
+    margin-bottom: 7.5rem;
+
+  
+  }
+
+  .container p-f {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .container-formulario {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px; 
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    font-size: 24px;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 658px;
+    height: 35px;
+  }
+  
+  button-formulario {
+    padding: 12px;
+    background-color: #EFAB26;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button-formulario:hover {
+    background-color: #efc97c;
+  }
+  
+  #respuesta {
+    margin-top: 20px;
+    color: aqua;
+  }
+  /*---------------FOOTER-----------*/
+  .redes-sociales a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .redes-sociales img {
+    width: 30px;
+  }

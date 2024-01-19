@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='stylesheet' href='./src/css/stylees.css'>
-  <link rel="stylesheet" href="../TechBechSchool/formulario/formulario.css">
-  <A href="../TechBechSchool/formulario/formulario.html"></A>
-
-
+  <link rel='stylesheet' href='/TechBechSchool/src/css/stylees.css'>
   <title>TeachBeatSchool</title>
   <title>BTM</title>
   <!-- <title>Formulario de Contacto</title> -->
@@ -16,12 +13,12 @@
 <body>
   <nav class='encabezado'>
     <div>
-        <img src="/assets/images/TBS.png" alt="Logo">
+        <img src="/TechBechSchool/assets/images/TBS.png"alt="Logo" href="/TechBechSchool/index.html">
     </div>
     <div>
-        <button class="botton" onclick="A.href='formulario.html'">Contacto</button>
-        <button class="botton" onclick="window.location.href='url2'">Instrumentos</button>
-        <button class="botton" onclick="window.location.href='url3'">Sobre Nosotos</button>
+        <a href="./formulario/formulario.html"><button>Contacto</button></a>
+        <a href="./index.html"><button>Instrumentos</button></a>
+        <a href="./pages/conocenos.html"><button>Nosotras</button></a>
     </div>     
   </nav>
 
@@ -29,7 +26,7 @@
         <div class="caja-superior">
         <h1>TeachBeatSchool</h1>
         <p>
-            jessica Donde la tradición se encuentra con la innovación.            
+            Donde la tradición se encuentra con la innovación.            
             Creemos en fusionar la riqueza de la música clásica 
             con la innovación del techno. Nuestro enfoque se 
             centra en desarrollar habilidades técnicas sólidas 
@@ -38,23 +35,26 @@
 
             <div class="imagenes-container">
               <div class="imagen-con-texto">
+                <a href="/TechBechSchool/pages/construccion.html">
                 <img src="./assets/images/img-bateria.png" alt="Imagen 1">
                 <p>Aprende Batería</p>
+              </a>
               </div>
               <div class="imagen-con-texto">
-                <a href="url_guitarra.html"></a>
+                <a href="./pages/construccion.html">
                 <img src="./assets/images/img-guitarra.png" alt="Imagen 2">
                 <p>Aprende Gitarra</p>
+              </a>
               </div>
               <div class="imagen-con-texto">
-                <a href=""url_Dj.html>
                 <img src="./assets/images/img-mesa.png" alt="Imagen 3">
+                <a href="./pages/construccion.html">
                 <p>Conviértete en Dj</p>
                 </a>
               </div>
               <div class="imagen-con-texto">
-                <a href="url_piano.html">
-                  <img src="./assets/images/img-piano.png" alt="Imagen 4">
+                <a href="./pages/piano.html">
+                  <img src="./assets/images/img-piano.png" alt="piano">
                   <p>Aprende Piano</p>
                 </a>
               </div>
@@ -62,8 +62,30 @@
           </div>
   </div>
 
- </div>
+  <img src="./public/assets/audio/icon/images/BackgroundGeneral.png" alt="Fondo About Us">
+  <div class="descripcion-imagen" onclick="mostrarDescripcion('descripcion1')"> <!-- Agrega un identificador único para cada descripción -->
+    <img src="./public/assets/audio/icon/images/Andrea.png" alt="Imagen 1">
+  </div>
+  <div class="descripcion-imagen" onclick="mostrarDescripcion('descripcion2')">
+    <img src="./public/assets/audio/icon/images/Andrea.png" alt="Imagen 2">
+  </div>
+  <div class="descripcion-imagen" onclick="mostrarDescripcion('descripcion3')">
+    <img src="./public/assets/audio/icon/images/Fatima.png" alt="Imagen 3">
+  </div>
+  <div class="descripcion-imagen" onclick="mostrarDescripcion('descripcion4')">
+    <img src="./public/assets/audio/icon/images/Nuria.png" alt="Imagen 4">
+  </div>
+  <div class="descripcion" id="descripcion1">Descripción 1</div>
+  <div class="descripcion" id="descripcion2">Descripción 2</div>
+  <div class="descripcion" id="descripcion3">Descripción 3</div>
+  <div class="descripcion" id="descripcion4">Descripción 4</div>
 
+
+  <script type="text/javascript">
+    //Metodo Generación Formulario   
+  </script>
+  
+  <!-- El resto de tu contenido va aquí -->
   <footer class="pie-de-pagina">
     <div class="texto-enlaces">
       <p><a href="./assets/pdf/pdf/Cookies y tecnología similar.pdf">Cookies</a></p>
@@ -71,19 +93,14 @@
       <p><a href="./assets/pdf/pdf/Declaración de privacidad de GoTech.pdf">Declaración Pivacidad</a></p>
     </div>
     <div class="redes-sociales">
-      <a href="https://www.facebook.com/?locale=es_ES"><img src="./assets/logos-redes/logoFacebook.png" alt="Facebook"></a>
-      <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"><img src="./assets/logos-redes/logoTwitter.png" alt="Twitter"></a>
-      <a href="https://www.instagram.com/"><img src="./assets/logos-redes/logoInstagram.png" alt="Instagram"></a>
-      <a href="https://es.linkedin.com/"><img src="./assets/logos-redes/logoLinkedIn.png" alt="LinkedIn"></a>
+      <a href="https://www.facebook.com/?locale=es_ES"><img src="./assets/images/logoFacebook.png" alt="Facebook"></a>
+      <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"><img src="./assets/images/logoTwitter.png" alt="Twitter"></a>
+      <a href="https://www.instagram.com/"><img src="./assets/images/logoInstagram.png" alt="Instagram"></a>
+      <a href="https://es.linkedin.com/"><img src="./assets/images/logoLinkedIn.png" alt="LinkedIn"></a>
     </div>
   </footer>
 
-  <!-- <script src="./src/js/index.js"></script> 
-  
-  <script type="text/javascript">
-    //Metodo Generación Formulario   
-  </script>
-  <script type="text/javascript" src="./src/js/formulario.js" alt="Contacto"></script> -->
+  <script src="/TechBechSchool/src/js/index.js"></script> 
 
 
 </body>
