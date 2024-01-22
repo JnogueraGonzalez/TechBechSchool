@@ -1,5 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  body {
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -164,7 +169,8 @@ nav a {
 }
 
 .redes-sociales img {
-    width: 30px;
+  width: 40px;
+  margin-right: 70px;
 }
 
 .texto-enlaces {
@@ -199,6 +205,12 @@ nav a {
 .texto-enlaces p {
   margin-left: 10px;
 }
+
+.texto-enlaces a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
 
 /* Media query para ajustar el diseño en pantallas más pequeñas */
 @media (max-width: 768px) {

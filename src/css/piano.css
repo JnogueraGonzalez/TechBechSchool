@@ -1,3 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
 body {
  
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
@@ -68,7 +75,7 @@ nav a {
  
 .piano-container {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   border: 10px solid rgb(208, 101, 7);
   border-radius: 1rem;
   margin: 0 auto;
@@ -120,7 +127,6 @@ nav a {
 
 .black-1 {
   left: 46px;
-  position: absolute;
 }
 
 .black-2 {
@@ -174,8 +180,8 @@ nav a {
 
 .black-15 {
   left: 840px;
-  position: absolute;
 }
+
 
 .black-key:hover {
   background: linear-gradient(
@@ -244,6 +250,7 @@ nav a {
   display: flex;
   justify-content: space-between;
   border-top: 2px solid #00CED1;
+  
 
 }
  
@@ -261,16 +268,23 @@ nav a {
 }
 
 .redes-sociales img {
-  width: 30px;
+  width: 40px;
+  margin-right: 70px;
 }
 
 .texto-enlaces {
   display: flex;
   align-items: center;
+
 }
 
 .texto-enlaces p {
   margin: 5px 10px 5px 0; /* Ajusta el margen según tus preferencias */
+}
+
+.texto-enlaces a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 .descripcion-imagen {
@@ -281,7 +295,7 @@ nav a {
 
 .descripcion-imagen img {
   width: 100%;
-  height: auto;
+  /*height: auto;*/
 }
 
 .descripcion {
@@ -294,7 +308,7 @@ margin: 0;
 }
 
 .texto-enlaces p {
-margin-left: 10px;
+margin-left: 20px;
 }
 
 /* Media query para ajustar el diseño en pantallas más pequeñas */

@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -127,7 +133,8 @@ nav a {
 }
 
 .redes-sociales img {
-    width: 30px;
+  width: 40px;
+  margin-right: 70px;
 }
 
 .texto-enlaces {
