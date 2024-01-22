@@ -31,7 +31,7 @@ Luego, este sonido se reproduce llamando a la función playSound().*/
 
   blackKeys.forEach((black, index) => {
     black.addEventListener("click", () => {
-      let sound = new Audio(`../assets/audio/black-keys/sounds_black-keys_${index}.mp3`);
+      let sound = new Audio(`../assets/audio/black-keys/sounds_black-keys_${index}.mp3`);  
       playSound(sound);
     });
   });

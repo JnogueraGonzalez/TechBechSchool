@@ -7,7 +7,7 @@
 body {
  
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-  background-image: url('../../assets/images/Background\ image\ big.png');
+  background-image: url('../../../TechBechSchool/assets/images/Background\ image\ big.png');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -126,6 +126,7 @@ nav a {
 
 .black-1 {
   left: 46px;
+  position: absolute;
 }
 
 .black-2 {
@@ -179,6 +180,7 @@ nav a {
 
 .black-15 {
   left: 840px;
+  position: absolute;
 }
 
 .black-key:hover {
@@ -202,6 +204,11 @@ nav a {
 
 /*Controles*/
 
+.options-container {
+  display: flex;
+  justify-content: space-around; 
+}
+
 .options-button {
   margin: 1rem;
   padding: 0.5rem;
@@ -218,6 +225,20 @@ nav a {
   font-weight: bold;
   transition: 0.2s all;
   display:flex ;
+  
+}
+
+.options-button:hover {
+  background: linear-gradient(
+    180deg,
+    rgb(230, 176, 94) 25%,
+    rgb(245, 136, 4) 86%
+  );
+}
+
+.options-button a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 /*Footer*/
