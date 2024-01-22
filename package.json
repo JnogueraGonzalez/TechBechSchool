@@ -1,0 +1,19 @@
+{
+  "name": "techbechschool",
+  "version": "1.0.0",
+  "description": "TeachBeatSchool - Documentación\r Descripción\r TeachBeatSchool es un proyecto educativo que combina la tradición de la música clásica con la innovación del mundo electrónico. Este repositorio contiene el código fuente para la página principal del sitio web, que ofrece información sobre los cursos de música disponibles y proporciona enlaces a secciones específicas, como contacto, instrumentos y la sección \"Nosotras\".",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0",
+    "jsdom": "^24.0.0"
+  }
+}
