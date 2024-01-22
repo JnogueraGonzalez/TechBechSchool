@@ -69,33 +69,21 @@ body {
         position: relative;
         color: #FFFFFF;
       }
+
       .imagenes-container {
         display: flex;
         justify-content: space-around; /* Puedes ajustar esto según tus preferencias */
-        flex-wrap: nowrap; /* Esto asegura que las cajas no se envuelvan a la siguiente línea */
+        
       }
       
-      .imagen-con-texto {
-        flex: 0 0 auto; /* Evita que las cajas se hagan más pequeñas que su contenido */
-        max-width: 200px; /* Ancho máximo del contenedor */
-        margin: 10px;
-        text-align: center;
-        background-color: rgba(128, 0, 128, 0.2);
-        padding: 20px;
+      .imagen-con-texto h3 {
+        color: white;
       }
-      
-      .imagen-con-texto img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
+
+      .imagen-con-texto h5 {
+        color: white;
       }
-      
-      .imagen-con-texto p {
-        margin: 0;
-        color: #fff;
-      }
-      
-   
+
      
     /* ... tu código anterior ... */
      
@@ -106,20 +94,19 @@ body {
   }
   
   .redes-sociales a {
-      margin: 0 10px;
+      margin-right: 20px;
       display: inline-block;
+      color: #FFFFFF;
+      text-decoration: none;
   }
   
   .redes-sociales img {
       width: 30px;
-      height: 30px; /* Ajusta la altura según tus necesidades */
   }
   
   .texto-enlaces {
       display: flex;
       align-items: center;
-      flex-wrap: wrap;
-      margin-top: 10px; /* Espacio entre redes sociales y enlaces de texto */
   }
   
   .texto-enlaces p {
@@ -141,6 +128,15 @@ body {
       display: none;
   }
   
+  .redes-sociales a,
+  .texto-enlaces {
+    margin: 0;
+  }
+  
+  .texto-enlaces p {
+    margin-left: 10px;
+  }
+  
   /* Media query para ajustar el diseño en pantallas más pequeñas */
   @media (max-width: 768px) {
       .redes-sociales,
@@ -152,7 +148,7 @@ body {
       .redes-sociales a {
           margin: 5px 0;
       }
-  } 
+  }
   
       .imagen-con-texto {
         position: relative;
