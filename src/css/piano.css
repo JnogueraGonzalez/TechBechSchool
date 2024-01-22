@@ -1,136 +1,170 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: #9568e4;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('/TechBechSchool/assets/images/Background\ image\ big.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /* background-position: center center; */
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-position: center center; */
+  /* background-attachment: scroll; O simplemente omite esta línea ya que "scroll" es el valor predeterminado */
+  /* border-bottom: 2px solid #00CED1;
+  bottom: 0; Coloca la línea en la parte inferior del body */
+ 
   }
   
-  html {
-    background: #250360;
-    height: 100vh;
-  }
-  
-  .piano-container {
+  nav {
+    /* background:#000000;   */
+    padding: 10px;
     display: flex;
-    width: 90vw;
-    height: 30vh;
-    border: 0.5rem solid #e4d746;
-    border-radius: 1rem;
-    margin: 0 auto;
-    position: relative;
-    padding: 1rem;
-    margin-top: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #00CED1;
   }
   
-  .key {
-    width: 2.5rem;
-    height: 10rem;
-    border-radius: 0 0 4px 4px;
-    box-shadow: 2px 2px 10px 0px #ccc;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    cursor:pointer;
-  }
-  
-  .white-key {
-    border: 3px solid #a2a4b1;
-    background-color: #fff;
-    transition: 0.2s all;
-  }
-  
-  .white-active,
-  .white-key:hover {
-    background-color: rgb(221, 178, 111);
-    border-bottom: none;
-    transform: rotate3d(1, 0, 0, 20deg);
-  }
-  
-  .black-key {
-    background: rgb(36, 32, 30);
-    z-index: 1;
-    background: linear-gradient(
-      180deg,
-      rgba(36, 32, 30, 1) 26%,
-      rgb(80, 78, 86) 86%
-    );
-    height: 7rem;
-    width: 1.5rem;
-    position: absolute;
-    top: 20px;
-    transition: 0.2s all;
-  }
-  
-  .black-1 {
-    left: 46px;
-  }
-  
-  .black-2 {
-    left: 87px;
-  }
-  
-  .black-4 {
-    left: 169px;
-  }
-  
-  .black-5 {
-    left: 210px;
-  }
-  .black-6 {
-    left: 251px;
-  }
-  
-  .black-8 {
-    left: 333px;
-  }
-  .black-9 {
-    left: 374px;
-  }
-  
-  .black-11 {
-    left: 456px;
-  }
-  
-  .black-12 {
-    left: 497px;
-  }
-  
-  .black-13 {
-    left: 538px;
-  }
-  .black-15 {
-    left: 620px;
-  }
-  
-  .black-16 {
-    left: 661px;
-  }
-  
-  .black-18 {
-    left: 743px;
-  }
-  
-  .black-19 {
-    left: 784px;
-  }
-  
-  .black-20 {
-    left: 825px;
-  }
-  
-  .black-key:hover {
-    background: linear-gradient(
-      180deg,
-      rgba(36, 32, 30, 1) 26%,
-      rgba(136, 173, 33) 86%
-    );
-  
-    transform: translateY(20px);
-  }
-  
-  .black-key:active {
-    background: linear-gradient(
-      180deg,
-      rgba(36, 32, 30, 1) 26%,
-      rgb(164, 164, 164) 86%
-    );
-  }
+
+.piano-container {
+  display: flex;
+  width: 90vw;
+  height: 57vh;
+  border: 10px solid #000634;
+  border-radius: 1rem;
+  margin: 0 auto;
+  position: relative;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.key {
+  width: 2.5rem;
+  height: 10rem;
+  border-radius:  4px 4px;
+  box-shadow: 2px 2px 10px 0px #ccc;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.white-key {
+  border: 3px solid #636363;
+  background-color: #fff;
+  position: relative;
+  transition: 0.2s all;
+}
+
+.white-active,
+.white-key:hover {
+  background-color: rgb(207, 147, 224);
+  border-bottom: none;
+  transform: rotate3d(1, 0, 0, 20deg);
+}
+
+.black-key {
+  background: rgb(36, 32, 30);
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(36, 32, 30, 1) 26%,
+    rgba(79, 82, 71, 1) 86%
+  );
+  height: 7rem;
+  width: 1.5rem;
+  position: absolute;
+  top: 20px;
+  transition: 0.2s all;
+}
+
+.black-1 {
+  left: 46px;
+}
+
+.black-2 {
+  left: 87px;
+}
+
+.black-3 {
+  left: 172px;
+}
+
+.black-4 {
+  left: 213px;
+}
+.black-5 {
+  left: 254px;
+}
+
+.black-6 {
+  left: 344px;
+}
+.black-7 {
+  left: 384px;
+}
+
+.black-8 {
+  left: 470px;
+}
+
+.black-9 {
+  left: 511px;
+}
+
+.black-10 {
+  left: 552px;
+}
+.black-11 {
+  left: 640px;
+}
+
+.black-12 {
+  left: 682px;
+}
+
+.black-13 {
+  left: 764px;
+}
+
+.black-14 {
+  left: 802px;
+}
+
+.black-15 {
+  left: 840px;
+}
+
+.black-key:hover {
+  background: linear-gradient(
+    180deg,
+    rgb(61, 59, 58) 26%,
+    rgb(164, 91, 213) 86%
+  );
+
+  transform: translateY(20px);
+}
+
+.black-key:active {
+  background: linear-gradient(
+    180deg,
+    rgba(36, 32, 30, 1) 26%,
+    rgb(164, 164, 164) 86%
+  );
+}
+
