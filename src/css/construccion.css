@@ -91,7 +91,12 @@ body {
         position: relative;
         color: #FFFFFF;
       }
-
+h3{
+  font-family: 'IBM Plex mono', monospace;
+}
+h5{
+  font-family: 'IBM Plex mono', monospace;
+}
       .imagenes-container {
         display: flex;
         justify-content: space-around; /* Puedes ajustar esto según tus preferencias */
