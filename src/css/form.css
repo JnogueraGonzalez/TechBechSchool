@@ -14,33 +14,57 @@
   }
 
 /*--------------NAV------*/
-nav {   
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 3px solid #00A7C5;
-  }
-  img {
-        width: 12vw; 
-        margin-left: 8rem; 
-  }
+nav {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #00CED1;
+  height:fit-content;
+
+}
+
+nav a {
+  text-decoration: none;
+}
+  
+.logo {
+  width: 12vw;
+  padding: 1em;
+}
+
+.nav_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
     
-  button {
-      background-color: #CEA8FF;
-      font-weight: bold;
-      font-size: 1em; 
-      right: 20px;
-      top: 50%;
-      padding: 1em 2em;
-      color: black;
-      border: none;
-      border-radius: 1em;
-      cursor:pointer;
-    }
-  button:hover {
-        background-color: #DCB1FF;
-      }
+}
+  
+.bottom {
+  background:linear-gradient(
+    200deg,
+    rgb(220, 177, 255), 
+    rgb(0, 206, 209), 
+    rgb(220, 177, 255));
+  font-size: 1em; 
+  padding: 1em ;
+  border: none;
+  border-radius: 1.5em; 
+  cursor:pointer;
+  margin: 0 0.5em; 
+  
+}
+  
+.bottom:hover {
+  background-color: rgb(220, 177, 255);
+  
+}
+  
+
+.bottom:active {
+  transform: scale(0.90);
+
+}
 
     /*-------------FORM--------------*/
   .container {
@@ -106,19 +130,85 @@ nav {
     text-align: center;
   }
 
-  .checkbox-form{
+  .checkbox-form {
     margin-right: 10px;
     width: 20px;
     height: 20px;
     vertical-align: middle;
     font-size: 16px;
+  }
+
 
   /*---------------FOOTER-----------*/
-  .redes-sociales a {
-    margin: 0 10px;
+  .pie-de-pagina {
+        
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #00CED1;
+
+  }
+   
+  .redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociales a {
+    margin-right: 20px;
     display: inline-block;
-  }
-  
-  .redes-sociales img {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.redes-sociales img {
     width: 30px;
-  }
+}
+
+.texto-enlaces {
+    display: flex;
+    align-items: center;
+}
+
+.texto-enlaces p {
+    margin: 5px 10px 5px 0; /* Ajusta el margen según tus preferencias */
+}
+
+.descripcion-imagen {
+    max-width: 100%; /* Ajusta según sea necesario */
+    text-align: center;
+    margin: 10px;
+}
+
+.descripcion-imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.descripcion {
+    display: none;
+}
+
+.redes-sociales a,
+.texto-enlaces {
+  margin: 0;
+}
+
+.texto-enlaces p {
+  margin-left: 10px;
+}
+
+/* Media query para ajustar el diseño en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .redes-sociales,
+    .texto-enlaces {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes-sociales a {
+        margin: 5px 0;
+    }
+}
