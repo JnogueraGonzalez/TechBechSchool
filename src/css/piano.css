@@ -4,48 +4,78 @@
   box-sizing: border-box;
 }
 
-html {
-  background: #9568e4;
-  height: 100vh;
-}
-
 body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url('/TechBechSchool/assets/images/Background\ image\ big.png');
+ 
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background-image: url('../../assets/images/Background\ image\ big.png');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
   height: 100vh;
   display: flex;
-  /* background-position: center center; */
   flex-direction: column;
   justify-content: space-between;
-  /* background-position: center center; */
-  /* background-attachment: scroll; O simplemente omite esta línea ya que "scroll" es el valor predeterminado */
-  /* border-bottom: 2px solid #00CED1;
-  bottom: 0; Coloca la línea en la parte inferior del body */
- 
-  }
+
+}
   
-  nav {
-    /* background:#000000;   */
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #00CED1;
-  }
+nav {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #00CED1;
+  height:fit-content;
+
+}
+
+nav a {
+  text-decoration: none;
+}
+  
+.logo {
+  width: 12vw;
+  padding: 1em;
+}
+
+.nav_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    
+}
+  
+.bottom {
+  background:linear-gradient(
+    200deg,
+    rgb(220, 177, 255), 
+    rgb(0, 206, 209), 
+    rgb(220, 177, 255));
+  font-size: 1em; 
+  padding: 1em ;
+  border: none;
+  border-radius: 1.5em; 
+  cursor:pointer;
+  margin: 0 0.5em; 
+  
+}
+  
+.bottom:hover {
+  background-color: rgb(220, 177, 255);
+  
+}
   
 
+.bottom:active {
+  transform: scale(0.90);
+
+}
+
+/*Piano*/
+ 
 .piano-container {
   display: flex;
-  width: 90vw;
-  height: 57vh;
-  border: 10px solid #000634;
+  flex-wrap: wrap;
+  border: 10px solid rgb(208, 101, 7);
   border-radius: 1rem;
   margin: 0 auto;
   position: relative;
@@ -57,7 +87,7 @@ body {
   width: 2.5rem;
   height: 10rem;
   border-radius:  4px 4px;
-  box-shadow: 2px 2px 10px 0px #ccc;
+  box-shadow: 2px 2px 10px 0px rgb(204, 204, 204);
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -65,26 +95,27 @@ body {
 }
 
 .white-key {
-  border: 3px solid #636363;
-  background-color: #fff;
+  border: 3px solid rgb(99, 99, 99);
+  background-color: rgb(255, 255, 255);
   position: relative;
   transition: 0.2s all;
 }
 
 .white-active,
 .white-key:hover {
-  background-color: rgb(207, 147, 224);
+  background-color: rgb(147, 216, 224);
   border-bottom: none;
   transform: rotate3d(1, 0, 0, 20deg);
 }
 
 .black-key {
+  display:flex;
   background: rgb(36, 32, 30);
   z-index: 1;
   background: linear-gradient(
     180deg,
-    rgba(36, 32, 30, 1) 26%,
-    rgba(79, 82, 71, 1) 86%
+    rgb(41, 3, 74) 26%,
+    rgb(157, 137, 200) 86%
   );
   height: 7rem;
   width: 1.5rem;
@@ -153,8 +184,8 @@ body {
 .black-key:hover {
   background: linear-gradient(
     180deg,
-    rgb(61, 59, 58) 26%,
-    rgb(164, 91, 213) 86%
+    rgba(216, 127, 11, 0.338) 26%,
+    rgb(187, 147, 73) 86%
   );
 
   transform: translateY(20px);
@@ -167,4 +198,48 @@ body {
     rgb(164, 164, 164) 86%
   );
 }
+
+
+/*Controles*/
+
+.options-button {
+  margin: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background:linear-gradient(
+    180deg,
+    rgb(245, 136, 4) 25%,
+    rgb(230, 176, 94) 86%
+    );
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.2s all;
+  display:flex ;
+}
+
+/*Footer*/
+
+.pie-de-pagina {
+        
+  padding: 0.75rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid rgb(0, 206, 209);
+
+}
+
+.texto-enlaces a , .redes-sociales a{
+  cursor: pointer;
+  margin: 0.5rem;
+  color: rgb(255, 255, 255);
+}
+
+.texto-enlaces a:hover {
+  color: rgb(0, 206, 209);
+}
+
 

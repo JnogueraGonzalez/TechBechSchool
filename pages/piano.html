@@ -5,77 +5,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="/TechBechSchool/src/css/piano.css">
+    <link rel="stylesheet" href="../src/css/piano.css">
     <title>Piano</title>
 </head>
 <body>
-    <nav>
+    
         <header class='encabezado'>
-            <div>
-                <img src="/public/assets/audio/icon/images/TBS.png" alt="Logo">
-            </div>
-            <div>
-                <button class="botton" onclick="window.location.href='url1'">Contacto</button>
-                <button class="botton" onclick="window.location.href='url2'">Instrumentos</button>
-                <button class="botton" onclick="window.location.href='url3'">Sobre Nosotos</button>
-            </div>     
-          </header>
-
-    </nav>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="/TechBechSchool/assets/images/TBS.png" alt="Logo">
+                </div>
+                <section class="navbar_bottom">
+                    <button class="bottom"><a href="/TechBechSchool/index.html" target="_blank">Inicio</button></a>
+                    <button class="bottom"><a href="/TechBechSchool/pages/conocenos.html" target="_blank">Sobre Nosotras</button></a>
+                    <button class="bottom"><a href="/TechBechSchool/pages/piano.html" target="_blank">Piano</button></a>
+                    <button class="bottom"><a href="/TechBechSchool/pages/construccion.html" target="_blank">Próximamente</button></a>
+                    <button class="bottom"><a href="/TechBechSchool/pages/form.html" target="_blank">Contacto</button></a>
+                   
+                </section>
+            </nav>     
+        </header>
+    
     <section class="piano-container">
 
         <!---White Keys--->
 
-        <div class="white-key key" id="one"></div>
-        <div class="white-key key" id="two"></div>
-        <div class="white-key key" id="three"></div>
-        <div class="white-key key" id="four"></div>
-        <div class="white-key key" id="five"></div>
-        <div class="white-key key" id="six"></div>
-        <div class="white-key key" id="seven"></div>
-        <div class="white-key key" id="eight"></div>
-        <div class="white-key key" id="nine"></div>
-        <div class="white-key key" id="ten"></div>
-        <div class="white-key key" id="eleven"></div>
-        <div class="white-key key" id="twelve"></div>
-        <div class="white-key key" id="thirteen"></div>
-        <div class="white-key key" id="fourteen"></div>
-        <div class="white-key key" id="fifteen"></div>
-        <div class="white-key key" id="sixteen"></div>
-        <div class="white-key key" id="seventeen"></div>
-        <div class="white-key key" id="eighteen"></div>
-        <div class="white-key key" id="nineteen"></div>
-        <div class="white-key key" id="twenty"></div>
+        <div class="white-key key" id="one">a</div>
+        <div class="white-key key" id="two">s</div>
+        <div class="white-key key" id="three">d</div>
+        <div class="white-key key" id="four">f</div>
+        <div class="white-key key" id="five">g</div>
+        <div class="white-key key" id="six">h</div>
+        <div class="white-key key" id="seven">j</div>
+        <div class="white-key key" id="eight">k</div>
+        <div class="white-key key" id="nine">l</div>
+        <div class="white-key key" id="ten">ñ</div>
+        <div class="white-key key" id="eleven">z</div>
+        <div class="white-key key" id="twelve">x</div>
+        <div class="white-key key" id="thirteen">c</div>
+        <div class="white-key key" id="fourteen">v</div>
+        <div class="white-key key" id="fifteen">b</div>
+        <div class="white-key key" id="sixteen">n</div>
+        <div class="white-key key" id="seventeen">m</div>
+        <div class="white-key key" id="eighteen">,</div>
+        <div class="white-key key" id="nineteen">.</div>
+        <div class="white-key key" id="twenty">-</div>
     
         
 
         <!---Black Keys-->
 
-        <div class="black-key key black-1" id="b1"></div>
-        <div class="black-key key black-2" id="b2"></div>
-        <div class="black-key key black-3" id="b3"></div>
-        <div class="black-key key black-4" id="b4"></div>
-        <div class="black-key key black-5" id="b5"></div>
-        <div class="black-key key black-6" id="b6"></div>
-        <div class="black-key key black-7" id="b7"></div>
-        <div class="black-key key black-8" id="b8"></div>
-        <div class="black-key key black-9" id="b9"></div>
-        <div class="black-key key black-10" id="b10"></div>
-        <div class="black-key key black-11" id="b11"></div>
-        <div class="black-key key black-12" id="b12"></div>
-        <div class="black-key key black-13" id="b13"></div>
-        <div class="black-key key black-14" id="b14"></div>
-        <div class="black-key key black-15" id="b15"></div>
+        <div class="black-key key black-1" id="b1">q</div>
+        <div class="black-key key black-2" id="b2">w</div>
+        <div class="black-key key black-3" id="b3">e</div>
+        <div class="black-key key black-4" id="b4">r</div>
+        <div class="black-key key black-5" id="b5">t</div>
+        <div class="black-key key black-6" id="b6">y</div>
+        <div class="black-key key black-7" id="b7">u</div>
+        <div class="black-key key black-8" id="b8">i</div>
+        <div class="black-key key black-9" id="b9">o</div>
+        <div class="black-key key black-10" id="b10">p</div>
+        <div class="black-key key black-11" id="b11">`</div>
+        <div class="black-key key black-12" id="b12">+</div>
+        <div class="black-key key black-13" id="b13">1</div>
+        <div class="black-key key black-14" id="b14">2</div>
+        <div class="black-key key black-15" id="b15">3</div>
         
-        
-
-
     </section>
 
+    <section class="options-container">
+        
+        <button class="options-button" a href="../assets/PDF/pdf/">Instrucciones</button>
+        <button class="options-button" a href="https://www.youtube.com/watch?v=bJu2vd5Rw8c">Curso Piano</button>
+        <button class="options-button" a href="../assets/PDF/partituras/BellaCiao-SlowVersion.pdf">Partituras</button>
+        <button class="options-button" a href="../assets/PDF/apuntes/PianoComplementario_03.pdf">Apuntes</button>
+        
+    
+        </section>
 
-    <footer>
 
-    </footer>
-    <script src="/TechBechSchool/src/js/piano.js"></script>
+    <footer class="pie-de-pagina">
+        <div class="texto-enlaces">
+          <a href="/TechBechSchool/assets/PDF/pdf/Cookies y tecnología similar.pdf y tecnología similar.pdf">Cookies</a>
+          <a href="/TechBechSchool/assets/PDF/pdf/Aviso Legal y Condiciones de Uso de modelosycontratos.pdf Legal y Condiciones de Uso de modelosycontratos.pdf">Términos</a>
+          <a href="/TechBechSchool/assets/PDF/pdf/Declaración de privacidad de GoTech.pdf">Declaración de Privacidad</a>
+        </div>
+        <div class="redes-sociales">
+          <a href="https://www.facebook.com/?locale=es_ES"><img src="../assets/images/Facebook.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/"><img src="../assets/images/Instagram.png" alt="Instagram"></a>
+          <a href="https://es.linkedin.com/"><img src="../assets/images/LinkedIn.png" alt="LinkedIn"></a>
+        </div>
+      </footer>
+    <script src="../src/js/piano.js"></script>
 </body>
 </html>
