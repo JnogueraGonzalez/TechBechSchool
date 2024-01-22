@@ -1,5 +1,5 @@
 
-  body-f {
+  body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -14,19 +14,19 @@
   }
 
 /*--------------NAV------*/
-    nav {   
+nav {   
         padding: 10px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         border-bottom: 3px solid #00A7C5;
-      }
-      img {
+  }
+  img {
         width: 12vw; 
         margin-left: 8rem; 
-    }
+  }
     
-    button {
+  button {
       background-color: #CEA8FF;
       font-weight: bold;
       font-size: 1em; 
@@ -38,11 +38,9 @@
       border-radius: 1em;
       cursor:pointer;
     }
-    button:hover {
+  button:hover {
         background-color: #DCB1FF;
       }
-
-    
 
     /*-------------FORM--------------*/
   .container {
@@ -52,32 +50,24 @@
     align-items: center;
     min-height: 100vh;
     background: rgba(249, 248, 246, 0.23);
-    margin-top: 6.5rem;
-    margin-left: 7.5rem;
-    margin-right: 7.5rem;
-    margin-bottom: 7.5rem;
-
-  
-  }
-
-  .container p-f {
-    margin-bottom: 20px;
-    font-size: 3rem;
-    display: flex;
+    margin: 6.5rem 7.5rem 7.5rem;
     flex-direction: column;
-  
   }
-  
+  .titulo {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'IBM Plex Mono', monospace;
+  }
   .container-formulario {
     width: 80%;
-    max-width: 400px;
     border-radius: 10px; 
   }
-  
   form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-left: 20%;
+    margin-right: 10%;
   }
   
   label {
@@ -90,27 +80,39 @@
     margin-bottom: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 658px;
-    height: 35px;
+    max-width: 100%;
+    height: 2rem;
+  }
+  input:hover {
+    background-color: #CEA8FF
   }
   
-  button-formulario {
+  .btn-send {
     padding: 12px;
     background-color: #EFAB26;
     color: #fff;
-    border: none;
-    border-radius: 4px;
+    border-radius: 150px;
     cursor: pointer;
+    text-align:center;
   }
   
-  button-formulario:hover {
+  .btn-send:hover {
     background-color: #efc97c;
   }
   
   #respuesta {
     margin-top: 20px;
-    color: aqua;
+    color: red;
+    text-align: center;
   }
+
+  .checkbox-form{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    font-size: 16px;
+
   /*---------------FOOTER-----------*/
   .redes-sociales a {
     margin: 0 10px;
