@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -68,6 +74,11 @@ h1 {
   font-size: 48px;
   background-color: rgba(255, 255, 255, 0.16);
 }
+
+h1 {
+  font-size: 48px;
+  background-color: rgba(255, 255, 255, 0.16);
+}
   
     .contenido-principal {
   
@@ -130,6 +141,11 @@ h1 {
     display: inline-block;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.redes-sociales img {
+  width: 40px;
+  margin-right: 70px;
 }
 
 .texto-enlaces {

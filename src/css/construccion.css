@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -57,7 +63,6 @@ body {
     background-color: rgb(220, 177, 255);
     
   }
-    
   
   .bottom:active {
     transform: scale(0.90);
@@ -74,7 +79,7 @@ body {
       } */
        .pie-de-pagina {
           
-        padding: 20px;
+        /*padding: 20px;*/
         text-align: center;
         display: flex;
         justify-content: space-between;
@@ -84,7 +89,8 @@ body {
     
       .contenido-principal {
     
-        width: 50%; /* Puedes ajustar el ancho según tus necesidades */
+        width: 50vw; /* Puedes ajustar el ancho según tus necesidades */
+        height:50%;
         margin-left: auto;
         margin-right: auto;
         text-align: center; /* Opcional: centra el contenido dentro de .contenido-principal */
@@ -100,7 +106,7 @@ h5{
       .imagenes-container {
         display: flex;
         justify-content: space-around; /* Puedes ajustar esto según tus preferencias */
-        
+        height:70%;
       }
       
       .imagen-con-texto h3 {
@@ -112,58 +118,89 @@ h5{
       }
 
      
-    /* ... tu código anterior ... */
-     
-    .redes-sociales {
-      display: flex;
-      justify-content: center;
+/*Footer*/
+
+.pie-de-pagina {
+        
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #00CED1;
+  
+
+}
+ 
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes-sociales a {
+  margin-right: 20px;
+  display: inline-block;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.redes-sociales img {
+  width: 40px;
+  margin-right: 70px;
+}
+
+.texto-enlaces {
+  display: flex;
+  align-items: center;
+  
+  
+}
+
+.texto-enlaces p {
+  margin: 5px 10px 5px 0; /* Ajusta el margen según tus preferencias */
+}
+
+.texto-enlaces a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.descripcion-imagen {
+  max-width: 100%; /* Ajusta según sea necesario */
+  text-align: center;
+  margin: 10px;
+}
+
+.descripcion-imagen img {
+  width: 100%;
+  height: auto;
+}
+
+.descripcion {
+  display: none;
+}
+
+.redes-sociales a,
+.texto-enlaces {
+margin: 0;
+}
+
+.texto-enlaces p {
+margin-left: 10px;
+}
+
+/* Media query para ajustar el diseño en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .redes-sociales,
+  .texto-enlaces {
+      flex-direction: column;
       align-items: center;
   }
-  
+
   .redes-sociales a {
-      margin-right: 20px;
-      display: inline-block;
-      color: #FFFFFF;
-      text-decoration: none;
+      margin: 5px 0;
   }
-  
-  .redes-sociales img {
-      width: 30px;
-  }
-  
-  .texto-enlaces {
-      display: flex;
-      align-items: center;
-  }
-  
-  .texto-enlaces p {
-      margin: 5px 10px 5px 0; /* Ajusta el margen según tus preferencias */
-  }
-  
-  .descripcion-imagen {
-      max-width: 100%; /* Ajusta según sea necesario */
-      text-align: center;
-      margin: 10px;
-  }
-  
-  .descripcion-imagen img {
-      width: 100%;
-      height: auto;
-  }
-  
-  .descripcion {
-      display: none;
-  }
-  
-  .redes-sociales a,
-  .texto-enlaces {
-    margin: 0;
-  }
-  
-  .texto-enlaces p {
-    margin-left: 10px;
-  }
-  
+}
   /* Media query para ajustar el diseño en pantallas más pequeñas */
   @media (max-width: 768px) {
       .redes-sociales,
@@ -178,15 +215,15 @@ h5{
   }
   
       .imagen-con-texto {
-        position: relative;
-        width: 100%; /* Ocupa el 100% del ancho del contenedor padre */
+        /*position: relative;*/
+        width: 30%; /* Ocupa el 100% del ancho del contenedor padre */
         max-width: 200px; /* Ancho máximo del contenedor */
-        margin-bottom: 4vw; /* Espaciado inferior en unidades de viewport */
+        /*margin-bottom: 4vw; /* Espaciado inferior en unidades de viewport */
         text-align: center;
       
         /* Fondo morado casi transparente */
         background-color: rgba(128, 0, 128, 0.2);
-        padding: 4vw; /* Espaciado interno en unidades de viewport */
+        /*padding: 4vw; /* Espaciado interno en unidades de viewport */
       }
       
       .imagen-con-texto img {

@@ -1,8 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 
 body {
  
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-  background-image: url('../../assets/images/Background\ image\ big.png');
+  background-image: url('../../../TechBechSchool/assets/images/Background\ image\ big.png');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -69,7 +75,7 @@ nav a {
  
 .piano-container {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   border: 10px solid rgb(208, 101, 7);
   border-radius: 1rem;
   margin: 0 auto;
@@ -176,6 +182,7 @@ nav a {
   left: 840px;
 }
 
+
 .black-key:hover {
   background: linear-gradient(
     180deg,
@@ -197,6 +204,11 @@ nav a {
 
 /*Controles*/
 
+.options-container {
+  display: flex;
+  justify-content: space-around; 
+}
+
 .options-button {
   margin: 1rem;
   padding: 0.5rem;
@@ -213,6 +225,20 @@ nav a {
   font-weight: bold;
   transition: 0.2s all;
   display:flex ;
+  
+}
+
+.options-button:hover {
+  background: linear-gradient(
+    180deg,
+    rgb(230, 176, 94) 25%,
+    rgb(245, 136, 4) 86%
+  );
+}
+
+.options-button a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 /*Footer*/
@@ -224,6 +250,7 @@ nav a {
   display: flex;
   justify-content: space-between;
   border-top: 2px solid #00CED1;
+  
 
 }
  
@@ -241,16 +268,23 @@ nav a {
 }
 
 .redes-sociales img {
-  width: 30px;
+  width: 40px;
+  margin-right: 70px;
 }
 
 .texto-enlaces {
   display: flex;
   align-items: center;
+
 }
 
 .texto-enlaces p {
   margin: 5px 10px 5px 0; /* Ajusta el margen según tus preferencias */
+}
+
+.texto-enlaces a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 .descripcion-imagen {
@@ -261,7 +295,7 @@ nav a {
 
 .descripcion-imagen img {
   width: 100%;
-  height: auto;
+  /*height: auto;*/
 }
 
 .descripcion {
@@ -274,7 +308,7 @@ margin: 0;
 }
 
 .texto-enlaces p {
-margin-left: 10px;
+margin-left: 20px;
 }
 
 /* Media query para ajustar el diseño en pantallas más pequeñas */
