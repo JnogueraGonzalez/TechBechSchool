@@ -90,6 +90,7 @@ body {
       .contenido-principal {
     
         width: 50vw; /* Puedes ajustar el ancho según tus necesidades */
+        height:50%;
         margin-left: auto;
         margin-right: auto;
         text-align: center; /* Opcional: centra el contenido dentro de .contenido-principal */
@@ -100,7 +101,7 @@ body {
       .imagenes-container {
         display: flex;
         justify-content: space-around; /* Puedes ajustar esto según tus preferencias */
-        
+        height:70%;
       }
       
       .imagen-con-texto h3 {

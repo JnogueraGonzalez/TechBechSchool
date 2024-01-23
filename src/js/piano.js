@@ -287,8 +287,8 @@ const keyMap = {
 }; //objeto con las teclas y el sonido que tienen que reproducir
 
 
-addEventListener("keydown", (e) => {
-  const keyInfo = keyMap[e.key];
+addEventListener("keydown", (e) => {      
+  const keyInfo = keyMap[e.key];         
   if (keyInfo) {
     keyInfo.element.classList.add("white-active");
     playSound(new Audio(keyInfo.sound));
@@ -301,4 +301,4 @@ addEventListener("keyup", (e) => {
   if (keyInfo) {
     keyInfo.element.classList.remove("white-active");
   }
-});
+});  
