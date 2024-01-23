@@ -31,7 +31,7 @@ Luego, este sonido se reproduce llamando a la función playSound().*/
 
   blackKeys.forEach((black, index) => {
     black.addEventListener("click", () => {
-      let sound = new Audio(`../assets/audio/black-keys/sounds_black-keys_${index}.mp3`);
+      let sound = new Audio(`../assets/audio/black-keys/sounds_black-keys_${index}.mp3`);  
       playSound(sound);
     });
   });
@@ -287,8 +287,8 @@ const keyMap = {
 }; //objeto con las teclas y el sonido que tienen que reproducir
 
 
-addEventListener("keydown", (e) => {
-  const keyInfo = keyMap[e.key];
+addEventListener("keydown", (e) => {      
+  const keyInfo = keyMap[e.key];         
   if (keyInfo) {
     keyInfo.element.classList.add("white-active");
     playSound(new Audio(keyInfo.sound));
@@ -301,4 +301,4 @@ addEventListener("keyup", (e) => {
   if (keyInfo) {
     keyInfo.element.classList.remove("white-active");
   }
-});
+});  

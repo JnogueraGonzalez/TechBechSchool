@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -63,6 +69,16 @@ nav a {
   transform: scale(0.90);
 
 }
+
+h1 {
+  font-size: 48px;
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+h1 {
+  font-size: 48px;
+  background-color: rgba(255, 255, 255, 0.16);
+}
   
     .contenido-principal {
   
@@ -72,6 +88,7 @@ nav a {
       text-align: center; /* Opcional: centra el contenido dentro de .contenido-principal */
       position: relative;
       color: #FFFFFF;
+      font-family: 'IBM Plex mono', monospace;
     }
     .imagenes-container {
       display: flex;
@@ -127,7 +144,8 @@ nav a {
 }
 
 .redes-sociales img {
-    width: 30px;
+  width: 40px;
+  margin-right: 70px;
 }
 
 .texto-enlaces {
@@ -138,6 +156,7 @@ nav a {
 .texto-enlaces p {
     margin: 5px 10px 5px 0; /* Ajusta el margen según tus preferencias */
 }
+
 
 .descripcion-imagen {
     max-width: 100%; /* Ajusta según sea necesario */
@@ -153,8 +172,24 @@ nav a {
 .descripcion {
     display: none;
 }
+/* CAMBIAR*/
+.redes-sociales a {
+  margin-right: 20px;
+  display: inline-block;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/*CAMBIAR*/
+.redes-sociales img {
+  width: 40px;
+  margin-right: 70px;
+}
+/*CAMBIAR*/
+.texto-enlaces a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
 
-.redes-sociales a,
 .texto-enlaces {
   margin: 0;
 }
