@@ -86,7 +86,7 @@ nav a {
       
       
     }
-    .h1{
+    h1{
       font-size: 60px;
       border: 3px black;
     }
@@ -125,7 +125,7 @@ nav a {
     justify-content: center;
     align-items: center;
 }
-
+ 
 .redes-sociales a {
     margin-right: 20px;
     display: inline-block;

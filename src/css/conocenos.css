@@ -132,10 +132,6 @@ h1 {
     text-decoration: none;
 }
 
-.redes-sociales img {
-    width: 30px;
-}
-
 .texto-enlaces {
     display: flex;
     align-items: center;
@@ -144,6 +140,7 @@ h1 {
 .texto-enlaces p {
     margin: 5px 10px 5px 0; /* Ajusta el margen según tus preferencias */
 }
+
 
 .descripcion-imagen {
     max-width: 100%; /* Ajusta según sea necesario */
@@ -159,8 +156,24 @@ h1 {
 .descripcion {
     display: none;
 }
+/* CAMBIAR*/
+.redes-sociales a {
+  margin-right: 20px;
+  display: inline-block;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/*CAMBIAR*/
+.redes-sociales img {
+  width: 40px;
+  margin-right: 70px;
+}
+/*CAMBIAR*/
+.texto-enlaces a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
 
-.redes-sociales a,
 .texto-enlaces {
   margin: 0;
 }

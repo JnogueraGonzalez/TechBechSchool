@@ -1,18 +1,15 @@
 function enviarFormulario() {
-    var formulario = document.getElementById('myForm');
-    var respuestaDiv = document.getElementById('respuesta');
+    var formulario = document.getElementById('myForm'); //Nuestro ID del formulario
+    var respuestaDiv = document.getElementById('respuesta'); //Elemento del DOM donde se muestra la respuesta
 
-    // Validar el formulario (puedes agregar más validaciones según tus necesidades)
-    if (formulario.checkValidity()) {
-        // Obtener datos del formulario
+    
+    if (formulario.checkValidity()) { //Lo utilizamos para que verificar que cumple todos los campos
+        
         var nombre = document.getElementById('nombre').value;
         var email = document.getElementById('email').value;
 
-        // Aquí puedes realizar alguna acción con los datos (enviar a un servidor, procesar, etc.)
-        // En este ejemplo, simplemente mostramos la respuesta en la página
         respuestaDiv.innerHTML = `Formulario enviado:<br>Nombre: ${nombre}<br>Email: ${email}`;
     } else {
-        // Si el formulario no es válido, mostrar mensajes de error predeterminados
         respuestaDiv.innerHTML = "Por favor, completa el formulario correctamente.";
     }
 }
